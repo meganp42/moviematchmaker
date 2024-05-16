@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h1>.𖥔 ݁ ˖ ♥︎ Movie Recommendations ♥︎ ˖ ݁ 𖥔.</h1>
+    <div class="movie-list">
+        {% if movies %}
+            <ul>
+                {% for movie in movies %}
+                    <li>{{ movie }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No movies found for the given personality words.</p>
+        {% endif %}
+    </div>
+    <a href="http://127.0.0.1:5000">♥︎ START OVER ♥︎</a>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>Movie Matchmaker</title>
+    </head>
+    <body>
+        <h1>.𖥔 ݁ ˖ ♥︎ Movie Matchmaker ♥︎ ˖ ݁ 𖥔.</h1>
+        <h3>➳❥ Find your movie soulmate!</h3>   
+        <h3>➳❥ How would you describe your personality?</h3> 
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Movie Matchmaker</title>
+</head>
+<body>
+    <h1>.𖥔 ݁ ˖ ♥︎ Movie Matchmaker ♥︎ ˖ ݁ 𖥔.</h1>
+    <h3>➳❥ Find your movie soulmate!</h3>
+    <form action="/recommend" method="post">
+        <section>
+            <label for="romantic">Romantic</label>
+            <input type="checkbox" id="romantic" name="personality" value="romantic"><br>
+        </section>
+
+        <section>
+            <label for="fun">Fun</label>
+            <input type="checkbox" id="fun" name="personality" value="fun"><br>
+        </section>
+
+        <section>
+            <label for="fun">Happy</label>
+            <input type="checkbox" id="happy" name="personality" value="happy"><br>
+        </section>
+
+        <section>
+            <label for="fun">Sensation seekers</label>
+            <input type="checkbox" id="sensation seekers" name="personality" value="sensation seekers"><br>
+        </section>
+
+        <section>
+            <label for="fun">Problem-solver</label>
+            <input type="checkbox" id="problem-solver" name="personality" value="problem-solver"><br>
+        </section>
+
+        <section>
+            <label for="fun">Realistic</label>
+            <input type="checkbox" id="realistic" name="personality" value="realistic"><br>
+        </section>
+
+        <section>
+            <label for="fun">Adventurous</label>
+            <input type="checkbox" id="adventurous" name="personality" value="adventurous"><br>
+        </section>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
